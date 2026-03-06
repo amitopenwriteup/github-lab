@@ -14,8 +14,21 @@
 4. Click the green 'Create Repository' button
 ```
 
-> **Screenshot: New Repository Form**
-> ![Create Repo](screenshots/01_create_repo.png)
+```
+┌─────────────────────────────────────────────────┐
+│              Create a New Repository            │
+├─────────────────────────────────────────────────┤
+│  Repository name:  [ repo-lab                 ] │
+│                                                 │
+│  Visibility:                                    │
+│    ( ) Private                                  │
+│    (•) Public                                   │
+│                                                 │
+│  Initialize with README:  [ ] (leave unchecked) │
+│                                                 │
+│         [ Create Repository ]                   │
+└─────────────────────────────────────────────────┘
+```
 
 ---
 
@@ -27,8 +40,17 @@
 3. Copy the SSH URL shown
 ```
 
-> **Screenshot: Quick Setup SSH URL**
-> ![SSH URL](screenshots/02_ssh_url.png)
+```
+┌─────────────────────────────────────────────────────────────┐
+│                      Quick Setup                            │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│   [ HTTPS ]  [ SSH ]  ← click SSH                          │
+│                                                             │
+│   git@github.com:amitopenwriteup/gittraining.git  [copy]   │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
 
 ---
 
@@ -57,9 +79,6 @@ git remote add origin git@github.com:amitopenwriteup/gittraining.git
 
 ```bash
 ssh-keygen -t rsa -b 4096
-```
-
-```
 # Press Enter for default file location
 # Press Enter twice for no passphrase
 ```
@@ -70,6 +89,17 @@ Your identification has been saved in /root/.ssh/id_rsa        [Private Key]
 Your public key has been saved in /root/.ssh/id_rsa.pub        [Public Key]
 ```
 
+```
+┌─────────────────────────────────────────┐
+│         SSH Key Pair Generated          │
+├─────────────────────────────────────────┤
+│                                         │
+│  /root/.ssh/id_rsa        ← Private Key │
+│  /root/.ssh/id_rsa.pub    ← Public Key  │
+│                                         │
+└─────────────────────────────────────────┘
+```
+
 ---
 
 ### Step B — View and Copy the Public Key
@@ -78,10 +108,18 @@ Your public key has been saved in /root/.ssh/id_rsa.pub        [Public Key]
 cat /root/.ssh/id_rsa.pub
 ```
 
-> Copy the entire output — it starts with `ssh-rsa` and ends with your email.
-
-> **Screenshot: Public Key Output**
-> ![Public Key](screenshots/03_public_key.png)
+```
+┌──────────────────────────────────────────────────────────────┐
+│                     Public Key Output                        │
+├──────────────────────────────────────────────────────────────┤
+│                                                              │
+│  ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDo3xample...         │
+│  ...xampleKeyContent...                                      │
+│  johndoe@example.com                                         │
+│                                                              │
+│  ← Copy the entire output                                    │
+└──────────────────────────────────────────────────────────────┘
+```
 
 ---
 
@@ -98,23 +136,42 @@ cat /root/.ssh/id_rsa.pub
 6. Click 'Add SSH key'
 ```
 
-> **Screenshot: SSH Keys Settings Page**
-> ![SSH Settings](screenshots/04_ssh_settings.png)
-
-> **Screenshot: Add New SSH Key**
-> ![Add SSH Key](screenshots/05_add_ssh_key.png)
+```
+┌─────────────────────────────────────────────────┐
+│         GitHub → Settings → SSH Keys           │
+├─────────────────────────────────────────────────┤
+│                                                 │
+│  Profile Picture                                │
+│       └── Settings                             │
+│              └── SSH and GPG keys              │
+│                     └── New SSH key            │
+│                                                 │
+│  Title : [ Public repo-key                  ]  │
+│  Key   : [ ssh-rsa AAAA...paste here        ]  │
+│                                                 │
+│              [ Add SSH key ]                    │
+└─────────────────────────────────────────────────┘
+```
 
 ---
 
 ### Step D — How SSH Authentication Works
 
 ```
-Private Key  →  Stored on your workstation (/root/.ssh/id_rsa)
-Public Key   →  Uploaded to GitHub
-
-When you push:
-  GitHub uses your PUBLIC key to decrypt communication
-  from your PRIVATE key, authenticating you as an authorized user.
+┌──────────────────────────────────────────────────────────────┐
+│                  SSH Authentication Flow                     │
+├──────────────────────────────────────────────────────────────┤
+│                                                              │
+│   Your Machine                        GitHub                 │
+│  ┌──────────────┐                ┌──────────────┐           │
+│  │ Private Key  │── git push ───▶│  Public Key  │           │
+│  │ (id_rsa)     │                │  (uploaded)  │           │
+│  └──────────────┘                └──────────────┘           │
+│                                         │                    │
+│                                  Decrypts & Verifies         │
+│                                         │                    │
+│                                  ✅ Authenticated            │
+└──────────────────────────────────────────────────────────────┘
 ```
 
 ---
@@ -132,8 +189,18 @@ cd myproject
 git push -u origin main
 ```
 
-> **Screenshot: Successful Push Output**
-> ![Push Output](screenshots/06_push_output.png)
+```
+┌──────────────────────────────────────────────────────────┐
+│                   git push flow                          │
+├──────────────────────────────────────────────────────────┤
+│                                                          │
+│   Local Repo (main)  ──── git push ────▶  GitHub Repo   │
+│                                                          │
+│   Counting objects: 5, done.                             │
+│   Writing objects: 100%                                  │
+│   Branch 'main' set up to track 'origin/main'           │
+└──────────────────────────────────────────────────────────┘
+```
 
 ---
 
@@ -144,8 +211,19 @@ git push -u origin main
 2. You should see your files listed in the repository
 ```
 
-> **Screenshot: GitHub Repo After Push**
-> ![GitHub Repo](screenshots/07_github_repo.png)
+```
+┌──────────────────────────────────────────────────────┐
+│       github.com/amitopenwriteup/gittraining         │
+├──────────────────────────────────────────────────────┤
+│                                                      │
+│  📁 myproject                                        │
+│  ├── 📄 README.md                                    │
+│  ├── 📄 app.py                                       │
+│  └── 📄 requirements.txt                            │
+│                                                      │
+│  Latest commit: "Initial commit"  ✅                 │
+└──────────────────────────────────────────────────────┘
+```
 
 ---
 
