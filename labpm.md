@@ -21,7 +21,7 @@ By the end of this lab you will be able to:
 
 ---
 
-## 🗂️ Part 1 — Setting Up Your Lab Repository
+##  Part 1 — Setting Up Your Lab Repository
 
 ### Step 1: Fork or Create a Repository
 
@@ -149,8 +149,8 @@ Your board should have these columns (add/rename as needed):
 
 | Column | Purpose |
 |---|---|
-| 📋 **Backlog** | All new issues start here |
-| 🔨 **In Progress** | Actively being worked on |
+|  **Backlog** | All new issues start here |
+|  **In Progress** | Actively being worked on |
 | 👀 **In Review** | PR is open, awaiting review |
 | ✅ **Done** | Merged and closed |
 
@@ -162,7 +162,7 @@ Your board should have these columns (add/rename as needed):
 
 ---
 
-## 🌿 Part 4 — Branching and Making Changes
+##  Part 4 — Branching and Making Changes
 
 ### Step 9: Create a Feature Branch
 
