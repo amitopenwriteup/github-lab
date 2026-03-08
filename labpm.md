@@ -1,4 +1,4 @@
-# 🧪 GitHub Lab: Code Review Process & Issue/Project Management
+#  GitHub Lab: Code Review Process & Issue/Project Management
 
 **Duration:** 60–90 minutes  
 **Level:** Beginner to Intermediate  
@@ -6,7 +6,7 @@
 
 ---
 
-## 📋 Overview
+##  Overview
 
 In this lab you will practice the full GitHub collaboration workflow — from opening issues and creating branches, to submitting pull requests, conducting code reviews, and managing work with GitHub Projects.
 
@@ -53,7 +53,7 @@ cd github-lab-practice
 
 ---
 
-## 🐛 Part 2 — Creating and Managing Issues
+##  Part 2 — Creating and Managing Issues
 
 Issues are the foundation of project tracking on GitHub. They represent bugs, features, tasks, or questions.
 
@@ -133,7 +133,7 @@ README should include:
 
 ---
 
-## 📌 Part 3 — GitHub Projects (Kanban Board)
+##  Part 3 — GitHub Projects (Kanban Board)
 
 ### Step 6: Create a Project Board
 
@@ -224,7 +224,7 @@ git push origin issue-1-add-greet-function
 
 ---
 
-## 🔍 Part 5 — Pull Requests and Code Review
+##  Part 5 — Pull Requests and Code Review
 
 ### Step 12: Open a Pull Request
 
@@ -327,11 +327,11 @@ Once the review is approved:
 3. Confirm the commit message, then click **Confirm squash and merge**
 4. Click **Delete branch** to clean up
 
-> ✅ **Checkpoint:** Issue #1 should now be automatically **closed** (because you used `Closes #1` in your commit).
+>  **Checkpoint:** Issue #1 should now be automatically **closed** (because you used `Closes #1` in your commit).
 
 ---
 
-## 📄 Part 6 — Fix the Documentation Issue
+## Part 6 — Fix the Documentation Issue
 
 Now practice the same workflow for Issue #2.
 
