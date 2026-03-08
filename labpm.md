@@ -400,7 +400,7 @@ Open a Pull Request on GitHub following the same steps as Part 5.
 
 ---
 
-## 🏁 Part 7 — Final Review and Wrap-Up
+## Part 7 — Final Review and Wrap-Up
 
 ### Step 20: Review Your Project Board
 
@@ -418,7 +418,7 @@ Go to **Lab Sprint Board** and verify:
 
 ---
 
-## 🎯 Lab Challenges (Bonus)
+## Lab Challenges (Bonus)
 
 Complete these if you finish early:
 
