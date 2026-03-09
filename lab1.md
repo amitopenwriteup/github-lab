@@ -5,7 +5,8 @@
 ## 1. Install Git
 
 ```bash
-apt-get install -y git
+sudo apt-get install git -y
+git --version
 ```
 
 ---
