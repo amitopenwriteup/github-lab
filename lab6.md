@@ -32,8 +32,6 @@ It operates on three levels: **commit history**, **staging area**, and **working
 mkdir reset-lab
 cd reset-lab
 git init
-git config --global user.name "John Doe"
-git config --global user.email "johndoe@example.com"
 
 echo "Line 1" > file.txt
 git add . && git commit -m "First commit"
