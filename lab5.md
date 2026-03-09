@@ -9,8 +9,6 @@ cd ~
 mkdir restore-lab
 cd restore-lab
 git init
-git config --global user.name "John Doe"
-git config --global user.email "johndoe@example.com"
 
 echo "Line 1" > file.txt
 git add .
