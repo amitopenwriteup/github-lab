@@ -85,8 +85,8 @@ ssh-keygen -t rsa -b 4096
 
 **Output:**
 ```
-Your identification has been saved in /root/.ssh/id_rsa        [Private Key]
-Your public key has been saved in /root/.ssh/id_rsa.pub        [Public Key]
+Your identification has been saved in /home/user/.ssh/id_rsa        [Private Key]
+Your public key has been saved in /home/user/.ssh/id_rsa.pub        [Public Key]
 ```
 
 ```
@@ -105,7 +105,7 @@ Your public key has been saved in /root/.ssh/id_rsa.pub        [Public Key]
 ### Step B — View and Copy the Public Key
 
 ```bash
-cat /root/.ssh/id_rsa.pub
+cat /home/user/.ssh/id_rsa.pub
 ```
 
 ```
