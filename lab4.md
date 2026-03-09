@@ -76,6 +76,7 @@ git clone https://<YOUR_TOKEN>@github.com/<USERNAME>/<REPO_NAME>.git
 
 **Example:**
 ```bash
+cd ~
 git clone https://ghp_xxxxxxxxxxxxxxxxxxxx@github.com/johndoe/myproject.git
 cd myproject
 ```
