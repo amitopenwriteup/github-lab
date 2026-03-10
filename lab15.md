@@ -123,6 +123,7 @@ mvn -version
 
 # Install Maven if not present
 sudo apt-get update
+sudo apt-get install openjdk-21-jdk -y
 sudo apt-get install -y maven
 
 # Verify installation
@@ -149,11 +150,6 @@ java -version
 ```bash
 cd ~/javadocker
 
-# Clean and compile the project
-mvn clean compile
-
-# Run tests
-mvn test
 
 # Package into jar
 mvn clean package
