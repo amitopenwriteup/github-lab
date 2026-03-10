@@ -57,18 +57,10 @@
 cd ~
 
 # Clone your forked repo (replace with your username)
-git clone https://github.com/<your-username>/javadocker.git
+git clone <sshurl>
 
 cd javadocker
 
-# Verify remote
-git remote -v
-
-# Add upstream to track original repo
-git remote add upstream https://github.com/amitopenwriteup/javadocker.git
-
-# Verify both remotes
-git remote -v
 ```
 
 ```
