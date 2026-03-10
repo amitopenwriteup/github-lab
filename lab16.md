@@ -126,8 +126,8 @@ mvn -version
 
 ```bash
 cd ~
-mkdir actions-runner
-cd actions-runner
+mkdir actions-runner1
+cd actions-runner1
 ```
 
 ### Step B — Download Runner Package
