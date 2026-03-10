@@ -80,7 +80,7 @@ env:
 jobs:
   build:
     name: Build Docker Image
-    runs-on: [self-hosted, linux]
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -95,7 +95,7 @@ jobs:
 
   publish:
     name: Publish to Docker Hub
-    runs-on: [self-hosted, linux]
+    runs-on: ubuntu-latest
     needs: build
     if: github.event_name == 'workflow_dispatch'
     steps:
