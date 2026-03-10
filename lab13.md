@@ -64,6 +64,10 @@ echo "Date: $(date)"
 echo "Script executed successfully!"
 ```
 
+```
+save the file esc :wq
+
+```
 ```bash
 # Make the script executable
 chmod +x scripts/hello.sh
