@@ -29,6 +29,7 @@ As shown in the diagram — when an event fires, the workflow starts, a job exec
 ## Setup: Navigate to myshellrepo
 
 ```bash
+cd ~
 Create a new reposity on github with Readme.md, and clone it: myshellrepo
 git clone <sshurl>
 example: **git clone git@github.com:amitopenwriteup/myshellrepo.git**
